@@ -20,6 +20,6 @@ done
 
 # Modem
 echo "Pulling modem..."
-adb pull /radio/modem.bin $BASE/modem.bin
+# adb pull /radio/modem.bin $BASE/modem.bin
 
 ./setup-makefiles.sh
