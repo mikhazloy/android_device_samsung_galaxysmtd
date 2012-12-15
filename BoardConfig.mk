@@ -35,3 +35,4 @@ TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysmtd,GT-I9000,GT-I9000M,GT-I9000T,SC-0
 include device/samsung/aries-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_SOURCE := kernel/samsung/galaxys_sc02b
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys_sc02b/shbootimg.mk
