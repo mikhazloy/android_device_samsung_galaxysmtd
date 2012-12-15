@@ -8,13 +8,13 @@ PRODUCT_RELEASE_NAME := GalaxyS
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/galaxysmtd/full_galaxysmtd.mk)
+$(call inherit-product, device/samsung/galaxys_sc02b/full_galaxys_sc02b.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := galaxysmtd
-PRODUCT_NAME := cm_galaxysmtd
+PRODUCT_DEVICE := galaxys_sc02b
+PRODUCT_NAME := cm_galaxys_sc02b
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-I9000
+PRODUCT_MODEL := SC-02B
 
 #Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9000 TARGET_DEVICE=GT-I9000 BUILD_FINGERPRINT=samsung/GT-I9000/GT-I9000:2.3.5/GINGERBREAD/XXJVT:user/release-keys PRIVATE_BUILD_DESC="GT-I9000-user 2.3.5 GINGERBREAD XXJVT release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SC-02B TARGET_DEVICE=SC-02B BUILD_FINGERPRINT=samsung/SC-02B/SC-02B:2.3.6/GINGERBREAD/OMLC4:user/release-keys PRIVATE_BUILD_DESC="SC-02B-user 2.3.6 GINGERBREAD OMLC4 release-keys"

@@ -17,6 +17,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S"
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S SC-02B"
 
 #endif

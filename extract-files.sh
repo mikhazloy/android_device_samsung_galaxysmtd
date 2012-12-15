@@ -1,13 +1,9 @@
 #!/bin/sh
 
 VENDOR=samsung
-DEVICE=galaxysmtd
-COMMON=aries-common
+DEVICE=galaxys_sc02b
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-
-# Get common files
-(cd ../$COMMON && ./extract-files.sh)
 
 echo "Pulling device files..."
 for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do

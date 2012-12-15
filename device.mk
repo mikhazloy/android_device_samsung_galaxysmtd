@@ -36,14 +36,14 @@
 
 # These are the hardware-specific configuration files
 DEVICE_PACKAGE_OVERLAYS += \
-	device/samsung/galaxysmtd/overlay
+	device/samsung/galaxys_sc02b/overlay
 
 PRODUCT_COPY_FILES := \
-	device/samsung/galaxysmtd/asound.conf:system/etc/asound.conf
+	device/samsung/galaxys_sc02b/asound.conf:system/etc/asound.conf
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxysmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl
+	device/samsung/galaxys_sc02b/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl
 
 # We have FFC
 PRODUCT_COPY_FILES += \
@@ -52,8 +52,13 @@ PRODUCT_COPY_FILES += \
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
+PRODUCT_COPY_FILES += \
+	device/samsung/galaxys_sc02b/init.aries.rc:root/init.aries.rc \
+	device/samsung/galaxys_sc02b/ueventd.aries.rc:root/ueventd.aries.rc \
+	device/samsung/galaxys_sc02b/updater.sh:updater.sh
+
 # See comment at the top of this file. This is where the other
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-$(call inherit-product-if-exists, vendor/samsung/galaxysmtd/galaxysmtd-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/galaxys_sc02b/galaxys_sc02b-vendor.mk)
