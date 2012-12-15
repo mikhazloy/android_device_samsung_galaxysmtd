@@ -2,9 +2,7 @@
 
 VENDOR=samsung
 DEVICE=galaxys_sc02b
-COMMON=aries-common
 OUTDIR=vendor/$VENDOR/$DEVICE
-OUTCOMMON=vendor/$VENDOR/$COMMON
 
 (cat << EOF) > ../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2011 The CyanogenMod Project
@@ -67,7 +65,6 @@ PRODUCT_COPY_FILES := \\
 DEVICE_PACKAGE_OVERLAYS := vendor/$VENDOR/aries-common/overlay
 
 \$(call inherit-product, $OUTDIR/$DEVICE-vendor-blobs.mk)
-\$(call inherit-product, $OUTCOMMON/aries-vendor-blobs.mk)
 EOF
 
 
