@@ -49,13 +49,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
-# Inherit Aries common device configuration.
-$(call inherit-product, device/samsung/aries-common/device_base.mk)
-
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxys_sc02b/init.aries.rc:root/init.aries.rc \
 	device/samsung/galaxys_sc02b/ueventd.aries.rc:root/ueventd.aries.rc \
 	device/samsung/galaxys_sc02b/updater.sh:updater.sh
+
+# Inherit Aries common device configuration.
+$(call inherit-product, device/samsung/aries-common/device_base.mk)
 
 # See comment at the top of this file. This is where the other
 # half of the device-specific product definition file takes care
