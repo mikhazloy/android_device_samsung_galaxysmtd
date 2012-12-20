@@ -109,7 +109,7 @@ on post-fs-data
     setprop vold.post_fs_data_done 1
 
 # 3D init
-service pvrsrvinit /system/bin/pvrsrvinit
+service pvrsrvinit /system/vendor/bin/pvrsrvinit
     class core
     user root
     group root

@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
 PRODUCT_COPY_FILES += \
+	device/samsung/galaxys_sc02b/egl.cfg:system/lib/egl/egl.cfg \
 	device/samsung/galaxys_sc02b/init.aries.rc:root/init.aries.rc \
 	device/samsung/galaxys_sc02b/ueventd.aries.rc:root/ueventd.aries.rc \
 	device/samsung/galaxys_sc02b/updater.sh:updater.sh

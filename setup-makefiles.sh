@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES := \\
 DEVICE_PACKAGE_OVERLAYS := vendor/$VENDOR/aries-common/overlay
 
 \$(call inherit-product, $OUTDIR/$DEVICE-vendor-blobs.mk)
+\$(call inherit-product, vendor/imgtec/crespo/device-crespo.mk)
 EOF
 
 
