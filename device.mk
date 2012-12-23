@@ -55,6 +55,9 @@ PRODUCT_COPY_FILES += \
 	device/samsung/galaxys_sc02b/ueventd.aries.rc:root/ueventd.aries.rc \
 	device/samsung/galaxys_sc02b/updater.sh:updater.sh
 
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.telephony.ril_class=SamsungExynos3DocomoRIL
+
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
