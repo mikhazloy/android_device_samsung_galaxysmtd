@@ -52,7 +52,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxys_sc02b/egl.cfg:system/lib/egl/egl.cfg \
 	device/samsung/galaxys_sc02b/init.aries.rc:root/init.aries.rc \
+	device/samsung/galaxys_sc02b/init.aries.gps.rc:root/init.aries.gps.rc \
 	device/samsung/galaxys_sc02b/ueventd.aries.rc:root/ueventd.aries.rc \
+	device/samsung/galaxys_sc02b/gps.conf:system/etc/gps.conf \
 	device/samsung/galaxys_sc02b/updater.sh:updater.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
