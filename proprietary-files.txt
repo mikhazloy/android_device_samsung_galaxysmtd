@@ -8,6 +8,8 @@ bin/geomagneticd
 bin/gpsd
 bin/orientationd
 bin/rild
+vendor/bin/gpsd
+vendor/lib/hw/gps.aries.so
 vendor/firmware/bcm4329.hcd
 vendor/firmware/nvram_net.txt
 vendor/firmware/samsung_mfc_fw.bin
