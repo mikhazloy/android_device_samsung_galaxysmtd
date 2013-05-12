@@ -15,11 +15,11 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $BASE/$DIR ]; then
         mkdir -p $BASE/$DIR
     fi
-    adb pull /system/$FILE $BASE/$FILE
+    cp cm10/system/$FILE $BASE/$FILE
 done
 
 # Modem
 echo "Pulling modem..."
-# adb pull /radio/modem.bin $BASE/modem.bin
+cp cm10/modem.bin $BASE/modem.bin
 
 ./setup-makefiles.sh
