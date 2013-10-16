@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008 The Android Open-Source Project
+# Copyright 2013 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,17 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, device/samsung/galaxysmtd/custom_galaxysmtd.mk)
 
-#
-# This file should set PRODUCT_MAKEFILES to a list of product makefiles
-# to expose to the build system.  LOCAL_DIR will already be set to
-# the directory containing this file.
-#
-# This file may not rely on the value of any variable other than
-# LOCAL_DIR; do not use any conditionals, and do not look up the
-# value of any variable that isn't set in this file or in a file that
-# it includes.
-#
-
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_galaxysmtd.mk
+PRODUCT_NAME := aosp_galaxysmtd
